@@ -1,0 +1,39 @@
+{
+  "profiles": {
+    "DMSO": {
+      "ml_per_revolution": 0.2,
+      "liquid_type": "DMSO",
+      "tubing_size": "custom",
+      "calibration_date": "Not calibrated",
+      "notes": "DMSO with custom tubing"
+    },
+    "15_NaoH": {
+      "ml_per_revolution": 0.2,
+      "liquid_type": "15_NaoH",
+      "tubing_size": "custom",
+      "calibration_date": "Not calibrated",
+      "notes": "15%NaOH with custom tubing"
+    },
+    "25_NaoH": {
+      "ml_per_revolution": 0.2,
+      "liquid_type": "25_NaoH",
+      "tubing_size": "custom",
+      "calibration_date": "Not calibrated",
+      "notes": "25%NaOH solution with custom tubing"
+    },
+    "water": {
+      "ml_per_revolution": 0.4,
+      "liquid_type": "water",
+      "tubing_size": "custom",
+      "calibration_date": "2025-04-22T11:00:52.975952",
+      "notes": ""
+    },
+    "0.5M_NaOH": {
+      "ml_per_revolution": 0.2,
+      "liquid_type": "0.5M_NaOH",
+      "tubing_size": "custom",
+      "calibration_date": "Not calibrated",
+      "notes": "0.5M_NaOH with custom tubing"
+    }
+  }
+}

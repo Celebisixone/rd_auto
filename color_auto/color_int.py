@@ -26,7 +26,7 @@ FILL_FLOW_RATE            = 60.0     # RPM for tubing fill
 DIRECTION                 = "CCW"    # Direction setting: "CW" or "CCW"
 
 SAMPLE_TO_SOLUTION_RATIO  = 1 / 20.9
-DEFAULT_ML_PER_REVOLUTION = 2.7489      # ml/revolution from calibration (updated based on observed behavior)
+DEFAULT_ML_PER_REVOLUTION = 3.21      # ml/revolution from calibration (updated based on observed behavior)
 MAX_PUMPING_TIME          = 60      # seconds
 TARE_COMMAND              = b'ST\r\n'
 CALIBRATION_FILE          = "pump_calibrations.json"
@@ -403,9 +403,9 @@ def run_concentration_control(args):
                     # Send a weight request command to the balance (SI command requests immediate weight)
                     bal_ser.write(b'SI\r\n')
                     
-                    # Wait for 30 seconds
-                    print("\nWaiting 30 seconds for fluid to settle...")
-                    for i in range(30, 0, -1):
+                    # Wait for 20 seconds
+                    print("\nWaiting 20 seconds for fluid to settle...")
+                    for i in range(20, 0, -1):
                         print(f"Waiting: {i}s", end='\r')
                         time.sleep(1)
                     

@@ -1,0 +1,149 @@
+{
+  "calibration_info": {
+    "robot_model": "MyCobot 280",
+    "calibration_date": "2025-05-27T16:15:27.753253",
+    "total_positions": 7
+  },
+  "positions": {
+    "home_position": {
+      "angles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coordinates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "description": "Starting home position (all joints at 0\u00b0)",
+      "timestamp": "2025-05-27T16:14:20.349468"
+    },
+    "above_vial": {
+      "angles": [
+        23.55,
+        -57.3,
+        -62.57,
+        39.63,
+        4.3,
+        21.79
+      ],
+      "coordinates": [
+        260.3,
+        48.0,
+        119.1,
+        -172.47,
+        7.56,
+        -87.37
+      ],
+      "description": "Position robot ABOVE the vial on surface (safe height ~50mm above vial)",
+      "timestamp": "2025-05-27T16:14:38.886385"
+    },
+    "grab_vial": {
+      "angles": [
+        23.55,
+        -57.3,
+        -62.57,
+        39.99,
+        4.3,
+        21.79
+      ],
+      "coordinates": [
+        260.4,
+        48.1,
+        119.6,
+        -172.14,
+        7.68,
+        -87.33
+      ],
+      "description": "Position gripper AT SURFACE LEVEL to grab the vial (gripper open)",
+      "timestamp": "2025-05-27T16:14:40.340609"
+    },
+    "lift_vial": {
+      "angles": [
+        23.37,
+        8.26,
+        -31.9,
+        -13.27,
+        3.86,
+        21.53
+      ],
+      "coordinates": [
+        119.4,
+        -14.0,
+        369.3,
+        -129.42,
+        19.33,
+        -77.01
+      ],
+      "description": "Lift vial UP from surface (safe height after grabbing)",
+      "timestamp": "2025-05-27T16:14:44.296696"
+    },
+    "above_balance": {
+      "angles": [
+        -50.09,
+        -23.46,
+        -57.65,
+        1.49,
+        0.26,
+        21.35
+      ],
+      "coordinates": [
+        93.1,
+        -209.9,
+        224.1,
+        -170.42,
+        4.0,
+        -161.09
+      ],
+      "description": "Position robot ABOVE the balance (safe approach height)",
+      "timestamp": "2025-05-27T16:14:52.091038"
+    },
+    "place_balance": {
+      "angles": [
+        -50.09,
+        -34.36,
+        -57.21,
+        4.39,
+        -0.08,
+        10.28
+      ],
+      "coordinates": [
+        102.3,
+        -221.3,
+        186.0,
+        -177.21,
+        0.41,
+        -150.37
+      ],
+      "description": "Position to PLACE vial ON the balance (gripper touching balance surface)",
+      "timestamp": "2025-05-27T16:15:08.613698"
+    },
+    "retreat_balance": {
+      "angles": [
+        -50.09,
+        14.5,
+        -57.65,
+        -11.16,
+        6.06,
+        -8.34
+      ],
+      "coordinates": [
+        35.2,
+        -134.0,
+        323.3,
+        -143.84,
+        -0.04,
+        -130.47
+      ],
+      "description": "Move UP/BACK from balance after releasing vial (safe retreat position)",
+      "timestamp": "2025-05-27T16:15:12.881679"
+    }
+  }
+}

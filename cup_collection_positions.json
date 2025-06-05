@@ -1,0 +1,225 @@
+{
+  "calibration_info": {
+    "robot_model": "MyCobot 280",
+    "collection_date": "2025-06-04T11:04:33.163915",
+    "collection_method": "manual_positioning_12_cups_three_level",
+    "coordinate_mode": "angles_primary",
+    "layout": {
+      "type": "manual",
+      "total_cups": 2,
+      "description": "Manually positioned cups with three-level approach",
+      "levels": [
+        "safe_height",
+        "right_above",
+        "inside"
+      ]
+    },
+    "positions_recorded": 9,
+    "position_types": [
+      "safe_height",
+      "right_above",
+      "inside"
+    ],
+    "gripper_mode": "expandable_recommended"
+  },
+  "positions": {
+    "balance_safe_height": {
+      "angles": [
+        84.9,
+        15.9,
+        -47.72,
+        -27.42,
+        7.29,
+        -2.46
+      ],
+      "coordinates": [
+        66.9,
+        102.5,
+        326.4,
+        -148.91,
+        5.0,
+        0.75
+      ],
+      "coord_mode": "actual",
+      "description": "Move the robot to a SAFE HEIGHT above the balance.\nThis should be high enough to clear the balance and any cups on it.\nUsed for safe approach and departure from the balance during operations.\nThis is the highest level for balance operations.",
+      "timestamp": "2025-06-04T10:59:06.435909",
+      "attempt_number": 1
+    },
+    "balance_right_above": {
+      "angles": [
+        101.68,
+        12.48,
+        -76.72,
+        -24.43,
+        11.77,
+        14.67
+      ],
+      "coordinates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coord_mode": "dummy",
+      "description": "Move the robot to RIGHT ABOVE the balance.\nThis should be directly above the balance, lower than safe height.\nUsed for precise positioning before final placement/pickup.\nThis is the intermediate level for balance operations.",
+      "timestamp": "2025-06-04T11:00:00.873434",
+      "attempt_number": 3
+    },
+    "balance_position": {
+      "angles": [
+        119.09,
+        2.81,
+        -84.63,
+        -8.43,
+        3.6,
+        -29.0
+      ],
+      "coordinates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coord_mode": "dummy",
+      "description": "Move the robot to the BALANCE location where cups will be placed for measurement.\nPosition the gripper where it can place and retrieve cups on the balance.\nThis is the weighing/measurement station where each cup will be processed.\nThis is the lowest level - actual contact with balance.",
+      "timestamp": "2025-06-04T11:01:52.173142",
+      "attempt_number": 3
+    },
+    "cup_1_safe_height": {
+      "angles": [
+        44.47,
+        6.59,
+        -65.83,
+        -41.13,
+        -1.14,
+        -31.81
+      ],
+      "coordinates": [
+        141.6,
+        48.9,
+        239.8,
+        170.57,
+        4.5,
+        -13.89
+      ],
+      "coord_mode": "actual",
+      "description": "Position the robot at SAFE HEIGHT above Cup #1.\nThis should be high enough to clear the cup and allow safe movement.\nThe robot should be positioned above the cup area but at maximum safe distance.\nThis is the highest level for Cup #1 operations.",
+      "timestamp": "2025-06-04T11:02:26.057721",
+      "attempt_number": 2
+    },
+    "cup_1_right_above": {
+      "angles": [
+        36.12,
+        6.67,
+        -114.52,
+        11.86,
+        6.85,
+        -43.59
+      ],
+      "coordinates": [
+        154.0,
+        40.7,
+        166.8,
+        -179.62,
+        9.07,
+        -10.61
+      ],
+      "coord_mode": "actual",
+      "description": "Position the robot RIGHT ABOVE Cup #1.\nThis should be directly above the cup, lower than safe height.\nUsed for precise positioning before entering the cup.\nThe gripper should be aligned with the cup opening.\nThis is the intermediate level for Cup #1 operations.",
+      "timestamp": "2025-06-04T11:02:37.411186",
+      "attempt_number": 1
+    },
+    "cup_1_inside": {
+      "angles": [
+        41.48,
+        8.26,
+        -141.94,
+        41.3,
+        5.44,
+        -20.21
+      ],
+      "coordinates": [
+        134.0,
+        39.6,
+        133.9,
+        179.65,
+        5.93,
+        -28.43
+      ],
+      "coord_mode": "actual",
+      "description": "Position the gripper INSIDE Cup #1.\nThe gripper should be positioned ready to close around the cup for gripping.\nLower the robot so the gripper is inside the cup at the proper depth.\nThis is the lowest level - actual contact with Cup #1.",
+      "timestamp": "2025-06-04T11:03:46.597649",
+      "attempt_number": 3
+    },
+    "cup_2_safe_height": {
+      "angles": [
+        12.65,
+        1.66,
+        -70.57,
+        -27.59,
+        2.02,
+        -20.74
+      ],
+      "coordinates": [
+        165.5,
+        -25.8,
+        230.4,
+        174.47,
+        4.04,
+        -56.72
+      ],
+      "coord_mode": "actual",
+      "description": "Position the robot at SAFE HEIGHT above Cup #2.\nThis should be high enough to clear the cup and allow safe movement.\nThe robot should be positioned above the cup area but at maximum safe distance.\nThis is the highest level for Cup #2 operations.",
+      "timestamp": "2025-06-04T11:03:57.205798",
+      "attempt_number": 1
+    },
+    "cup_2_right_above": {
+      "angles": [
+        21.09,
+        16.69,
+        -118.03,
+        3.33,
+        1.49,
+        -24.87
+      ],
+      "coordinates": [
+        144.0,
+        -11.1,
+        170.7,
+        173.35,
+        4.7,
+        -44.41
+      ],
+      "coord_mode": "actual",
+      "description": "Position the robot RIGHT ABOVE Cup #2.\nThis should be directly above the cup, lower than safe height.\nUsed for precise positioning before entering the cup.\nThe gripper should be aligned with the cup opening.\nThis is the intermediate level for Cup #2 operations.",
+      "timestamp": "2025-06-04T11:04:10.562302",
+      "attempt_number": 1
+    },
+    "cup_2_inside": {
+      "angles": [
+        16.96,
+        12.65,
+        -141.24,
+        37.96,
+        5.53,
+        -31.37
+      ],
+      "coordinates": [
+        137.1,
+        -19.9,
+        141.0,
+        -177.68,
+        4.97,
+        -41.58
+      ],
+      "coord_mode": "actual",
+      "description": "Position the gripper INSIDE Cup #2.\nThe gripper should be positioned ready to close around the cup for gripping.\nLower the robot so the gripper is inside the cup at the proper depth.\nThis is the lowest level - actual contact with Cup #2.",
+      "timestamp": "2025-06-04T11:04:32.654932",
+      "attempt_number": 1
+    }
+  }
+}

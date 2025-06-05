@@ -1,0 +1,94 @@
+[2025-06-04 21:59:53] INFO: ============================================================
+[2025-06-04 21:59:53] INFO: MYCOBOT 280 VOLTAGE TROUBLESHOOTING
+[2025-06-04 21:59:53] INFO: ============================================================
+[2025-06-04 21:59:53] INFO: Attempting to connect to MyCobot280...
+[2025-06-04 21:59:54] INFO: Robot object created successfully
+[2025-06-04 21:59:54] INFO: Testing basic communication...
+[2025-06-04 21:59:55] WARNING: Controller communication: FAILED
+[2025-06-04 21:59:55] INFO: Proceeding anyway - some functions may still work
+[2025-06-04 21:59:55] INFO: 
+=== POWER ON TEST ===
+[2025-06-04 21:59:55] INFO: Sending power_on command...
+[2025-06-04 21:59:58] INFO: Power on command sent successfully
+[2025-06-04 21:59:58] INFO: Testing servo response...
+[2025-06-04 21:59:58] ERROR: Servos not responding to get_angles()
+[2025-06-04 21:59:58] INFO: 
+=== VOLTAGE MONITORING TEST ===
+[2025-06-04 21:59:58] INFO: Direct voltage reading not available
+[2025-06-04 21:59:58] INFO: Checking individual servo states...
+[2025-06-04 21:59:58] INFO: Servo 1 voltage: 12.3V
+[2025-06-04 21:59:58] INFO: Servo 2 enabled: 1
+[2025-06-04 21:59:58] INFO: Servo 2 voltage: 12.3V
+[2025-06-04 21:59:58] INFO: Servo 3 enabled: 1
+[2025-06-04 21:59:58] INFO: Servo 3 voltage: 12.2V
+[2025-06-04 21:59:58] INFO: Servo 4 enabled: 1
+[2025-06-04 21:59:58] INFO: Servo 4 voltage: 7.6V
+[2025-06-04 21:59:58] INFO: Servo 5 enabled: 1
+[2025-06-04 21:59:58] INFO: Servo 5 voltage: 7.8V
+[2025-06-04 21:59:59] INFO: Servo 6 enabled: 1
+[2025-06-04 21:59:59] INFO: Servo 6 voltage: 7.7V
+[2025-06-04 21:59:59] INFO: 
+=== MOVEMENT STRESS TEST ===
+[2025-06-04 21:59:59] INFO: Original position: [0.52, -0.08, -0.61, -1.23, 0.26, -0.61]
+[2025-06-04 21:59:59] INFO: Test 1: Moving to Home position
+[2025-06-04 21:59:59] INFO: Target angles: [0, 0, 0, 0, 0, 0]
+[2025-06-04 22:00:03] INFO: Reached: [0.52, -0.08, -0.61, -1.23, 0.26, -0.61]
+[2025-06-04 22:00:03] INFO: Movement 1: SUCCESS
+[2025-06-04 22:00:05] INFO: Test 2: Moving to Mid-range position
+[2025-06-04 22:00:05] INFO: Target angles: [45, 30, -60, 30, 45, 0]
+[2025-06-04 22:00:09] INFO: Reached: [44.29, 30.23, -59.76, 29.17, 45.17, -0.61]
+[2025-06-04 22:00:09] INFO: Movement 2: SUCCESS
+[2025-06-04 22:00:11] INFO: Test 3: Moving to Higher power position
+[2025-06-04 22:00:11] INFO: Target angles: [90, 45, -90, 45, 90, 0]
+[2025-06-04 22:00:15] INFO: Reached: [89.29, 44.73, -89.82, 44.38, 88.68, -0.61]
+[2025-06-04 22:00:15] INFO: Movement 3: SUCCESS
+[2025-06-04 22:00:17] INFO: Test 4: Moving to Return to home
+[2025-06-04 22:00:17] INFO: Target angles: [0, 0, 0, 0, 0, 0]
+[2025-06-04 22:00:21] INFO: Reached: [0.52, 0.43, -0.61, -0.79, 0.7, -0.61]
+[2025-06-04 22:00:21] INFO: Movement 4: SUCCESS
+[2025-06-04 22:00:23] INFO: 
+=== GRIPPER POWER TEST ===
+[2025-06-04 22:00:23] INFO: Testing gripper open...
+[2025-06-04 22:00:25] INFO: Testing gripper close...
+[2025-06-04 22:00:27] INFO: Testing gripper open (final)...
+[2025-06-04 22:00:29] INFO: Gripper test completed successfully
+[2025-06-04 22:00:33] INFO: 
+=== CONTINUOUS MONITORING (30s) ===
+[2025-06-04 22:00:42] INFO: Sample 10: Angles = [0.52, 0.43, -0.61, -0.79, 0.7, -0.61]
+[2025-06-04 22:00:52] INFO: Sample 20: Angles = [0.52, 0.43, -0.61, -0.79, 0.7, -0.61]
+[2025-06-04 22:01:03] INFO: Sample 30: Angles = [0.52, 0.43, -0.61, -0.79, 0.7, -0.61]
+[2025-06-04 22:01:04] INFO: Monitoring complete: 0/30 failures (0.0%)
+[2025-06-04 22:01:04] INFO: Low failure rate - power seems stable
+[2025-06-04 22:01:04] INFO: 
+=== TEST SUMMARY ===
+[2025-06-04 22:01:04] INFO: Power On Test: FAIL
+[2025-06-04 22:01:04] INFO: Voltage Monitoring: FAIL
+[2025-06-04 22:01:04] INFO: Movement Stress Test: PASS
+[2025-06-04 22:01:04] INFO: Gripper Power Test: PASS
+[2025-06-04 22:01:04] INFO: 
+=== POWER SUPPLY RECOMMENDATIONS ===
+[2025-06-04 22:01:04] INFO: 1. Check power adapter specifications:
+[2025-06-04 22:01:04] INFO:    - MyCobot 280 requires 12V DC power supply
+[2025-06-04 22:01:04] INFO:    - Minimum 5A current rating (8A recommended for heavy loads)
+[2025-06-04 22:01:04] INFO:    - Use only the official power adapter or equivalent quality
+[2025-06-04 22:01:04] INFO: 
+[2025-06-04 22:01:04] INFO: 2. Check connections:
+[2025-06-04 22:01:04] INFO:    - Ensure power cable is firmly connected
+[2025-06-04 22:01:04] INFO:    - Check for loose connections at both ends
+[2025-06-04 22:01:04] INFO:    - Inspect cable for damage or wear
+[2025-06-04 22:01:04] INFO: 
+[2025-06-04 22:01:04] INFO: 3. Environmental factors:
+[2025-06-04 22:01:04] INFO:    - Ensure adequate ventilation around power supply
+[2025-06-04 22:01:04] INFO:    - Check ambient temperature (high temp can cause voltage drops)
+[2025-06-04 22:01:04] INFO:    - Avoid extension cords or power strips when possible
+[2025-06-04 22:01:04] INFO: 
+[2025-06-04 22:01:04] INFO: 4. Load considerations:
+[2025-06-04 22:01:04] INFO:    - Heavy payloads increase power consumption
+[2025-06-04 22:01:04] INFO:    - Fast movements draw more current
+[2025-06-04 22:01:04] INFO:    - Multiple simultaneous servo movements are power-intensive
+[2025-06-04 22:01:04] INFO: 
+[2025-06-04 22:01:04] INFO: 5. If problems persist:
+[2025-06-04 22:01:04] INFO:    - Try a different power outlet
+[2025-06-04 22:01:04] INFO:    - Test with minimal load (no gripper payload)
+[2025-06-04 22:01:04] INFO:    - Consider upgrading to higher-capacity power supply
+[2025-06-04 22:01:04] INFO:    - Contact technical support with this log file
